@@ -1,8 +1,8 @@
 # Only Fans Clone Using Expo
 
-Use [`expo-router`](https://expo.github.io/router) to build native navigation using files in the `app/` directory.
+This is a basic OnlyFans clone app, which inspired me to build a subscription-based app.
 
-## 🚀 How to use
+## Video Demo
 
 https://github.com/CodesByDine/PaidPlatform-App/assets/91410767/30cd9918-0ba9-4be2-9180-5a84773757f8
 
