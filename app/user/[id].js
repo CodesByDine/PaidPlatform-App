@@ -6,6 +6,7 @@ import { useState } from "react";
 import UserProfileHeader from "../../src/components/UserProfileHeader";
 import posts from "../../assets/data/posts";
 import Post from "../../src/components/Post";
+import { FontAwesome5 } from "@expo/vector-icons";
 
 const ProfilePage = () => {
   const [isSubscribed, setIsSubscribed] = useState(false);
@@ -16,6 +17,40 @@ const ProfilePage = () => {
 
   if (!user) {
     return <Text>User not found</Text>;
+  }
+
+  if (!isSubscribed) {
+    return (
+      <View>
+        <UserProfileHeader
+          user={user}
+          isSubscribed={isSubscribed}
+          setIsSubscribed={setIsSubscribed}
+        />
+        <View
+          style={{
+            backgroundColor: "gainsboro",
+            alignItems: "center",
+            padding: 20,
+          }}
+        >
+          <FontAwesome5 name="lock" size={50} color="gray" />
+          <Text
+            style={{
+              backgroundColor: "royalblue",
+              padding: 15,
+              borderRadius: 25,
+              overflow: "hidden",
+              color: "white",
+              margin: 20,
+            }}
+          >
+            {" "}
+            Subscribe to see user's posts
+          </Text>
+        </View>
+      </View>
+    );
   }
 
   return (

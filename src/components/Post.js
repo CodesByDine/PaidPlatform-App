@@ -1,5 +1,5 @@
 import { View, Text, Image } from "react-native";
-import { Entypo } from "@expo/vector-icons";
+import { Entypo, AntDesign, FontAwesome } from "@expo/vector-icons";
 
 const Post = ({ post }) => {
   return (
@@ -36,6 +36,24 @@ const Post = ({ post }) => {
       <Text style={{ margin: 10, lineHeight: 18 }}>{post.text}</Text>
 
       <Image src={post.image} style={{ width: "100%", aspectRatio: 1 }} />
+
+      <View style={{ margin: 10, flexDirection: "row" }}>
+        <AntDesign
+          name="hearto"
+          size={22}
+          color="gray"
+          style={{ marginRight: 15 }}
+        />
+        <FontAwesome
+          name="dollar"
+          size={20}
+          color="gray"
+          style={{ marginRight: 15 }}
+        />
+      </View>
+      <Text style={{ fontWeight: "500", marginHorizontal: 10 }}>
+        {post.likes} Likes
+      </Text>
     </View>
   );
 };
