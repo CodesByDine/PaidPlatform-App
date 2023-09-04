@@ -1,6 +1,6 @@
 # Only Fans Clone Using Expo
 
-This is a basic OnlyFans clone app, which inspired me to build a subscription-based app.
+This is a basic OnlyFans clone app, which inspired me to build a subscription-based app. This application will feature both front-end and back-end using aws.
 
 ## Video Demo
 
